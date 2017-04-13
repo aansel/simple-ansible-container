@@ -3,7 +3,7 @@ services:
   web:
      image: debian:jessie
      ports:
-       - "8000:8000"
+       - "8000"
      command: ['python', '-m', 'SimpleHTTPServer']
      dev_overrides:
        environment:
