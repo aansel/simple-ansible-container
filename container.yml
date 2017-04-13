@@ -1,8 +1,8 @@
 version: "2"
 services:
-  lpcweb:
+  {{BRANCH_NAME}}:
      image: debian:jessie
-     labels: ["{{BRANCH_NAME}}-lpcweb"]
+     labels: ["lpc-web-{{BRANCH_NAME}}"]
      ports:
        - "8000"
      command: ['python', '-m', 'SimpleHTTPServer']
