@@ -1,8 +1,10 @@
 version: "2"
 services:
   lpcweb:
+     vars:
+       BRANCH_NAME: toto
      image: debian:jessie
-     labels: ["{{BRANCH_NAME}}-lpcweb"]
+     labels: ["{{BRANCH_NAME}}-simple"]
      ports:
        - "8000"
      command: ['python', '-m', 'SimpleHTTPServer']
